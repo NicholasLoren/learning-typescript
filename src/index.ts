@@ -1,5 +1,6 @@
 import { TodoItem } from './todoItem'
 import { TodoCollection } from './todoCollection'
+import { JsonTodoCollection } from './jsonTodoCollection'
 import inquirer from 'inquirer'
 
 const todos = [
@@ -10,7 +11,7 @@ const todos = [
   new TodoItem(5, 'Task 5'),
 ]
 
-const collection = new TodoCollection('Nicholas Loren', todos)
+const collection = new JsonTodoCollection('Nicholas Loren', todos)
 let showCompleted = true
 
 function displayTodoList(): void {
